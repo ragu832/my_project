@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="\public\css\logup.css"> <!-- Reference to the external CSS file -->
+    <title>Signup</title>
+</head>
+<body>
+    <div class="login-box">
+        <div class="login-header">
+            <header>Signup</header>
+        </div>
+        <form action="http://localhost:5003/api/register" method="POST" id="signupForm">
+            <div class="input-box">
+                <input type="text" class="input-field" id="signinUsername" name="username" placeholder="UserName" autocomplete="off" required>
+            </div>
+            <div class="input-box">
+                <input type="email" class="input-field" id="signupEmail" name="email" placeholder="Email" autocomplete="off" required>
+            </div>
+            <div class="input-box">
+                <input type="password" class="input-field" id="signupPassword" name="password" placeholder="Password" autocomplete="off" required>
+            </div>
+            <div class="forgot">
+                <section>
+                    <input type="checkbox" id="check" name="remember">
+                    <label for="check">Remember me</label>
+                </section>
+                <section>
+                    <a href="#">Forgot password</a>
+                </section>
+            </div> <!-- Closing the "forgot" div -->
+            <div class="input-submit">
+                <button type="submit" class="submit-btn" id="submit">Sign up</button>
+            </div>
+        </form>
+        <div class="sign-in-link">
+            <p>Already have an account? <a href="\public\icons\html\login.html">Login</a></p>
+        </div>
+        <br>
+        <div>
+            <p class="Continue">------------- Continue with -------------</p>
+            <br>
+            <div id="g_id_onload"
+                data-client_id="YOUR_CLIENT_ID"
+                data-login_uri="YOUR_REDIRECT_URI">
+            </div>
+            <div class="google-signup-container">
+                <button id="googleSignupBtn" class="google-signup-btn">
+                    <img src="\public\icons\GOOGLE.png" alt="Google Logo" class="google-logo">
+                    <span class="google-btn-text">Continue with Google</span>
+                </button>
+            </div>
+    </div>
+
+    <script src="script.js"></script> <!-- Your custom JavaScript -->
+    <!-- Google Sign-In API script -->
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="\public\css\login.css">
+    <title>Login</title>
+</head>
+<body>
+    <!-- Login Box -->
+    <div class="login-box">
+        <div class="login-header">
+            <header>Login</header>
+        </div>
+        <form action="http://localhost:5003/api/login" method="POST" id="signinForm">
+            <div class="input-box">
+                <input type="text" class="input-field" id="signinUsername" name="username" placeholder="UserName" autocomplete="off" required>
+            </div>
+            <div class="input-box">
+                <input type="password" class="input-field" id="signinPassword" name="password" placeholder="Password" autocomplete="off" required>
+            </div>
+            <div class="forgot">
+                <section>
+                    <input type="checkbox" id="check" name="remember">
+                    <label for="check">Remember me</label>
+                </section>
+                <section>
+                    <a href="#">Forgot password</a>
+                </section>
+            </div>
+            <div class="input-submit">
+                <button type="submit" class="submit-btn" id="submit">Sign In</button>
+            </div>
+        </form>
+        <div class="sign-up-link">
+            <p>Don't have an account? <a href="\public\icons\html\logup.html">Sign Up</a></p>
+        </div>
+        <div>
+            <p class="Continue">------------- Continue with -------------</p>
+            <div class="google-signin-container">
+                <button id="googleSignInBtn" class="google-signin-btn">
+                    <img src="\public\icons\GOOGLE.png" alt="Google Logo" class="google-logo">
+                    <span class="google-btn-text">Continue with Google</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="script.js"></script>
+</body>
+</html>

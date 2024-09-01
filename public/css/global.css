@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --m3-title-medium: Roboto;
+
+  /* font sizes */
+  --m3-title-medium-size: 16px;
+  --m3-display-small-size: 36px;
+  --m3-display-medium-size: 45px;
+
+  /* Colors */
+  --schemes-on-primary: #fff;
+  --color-gainsboro: #d9d9d9;
+  --grays-black: #000;
+
+  /* Paddings */
+  --padding-161xl: 180px;
+  --padding-xl: 20px;
+  --padding-71xl: 90px;
+  --padding-19xl: 38px;
+}
